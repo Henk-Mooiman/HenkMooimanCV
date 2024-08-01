@@ -180,6 +180,20 @@ input, select, textarea {
 		border-bottom: dotted 1px;
 	}
 
+	/* Mobile styles */
+	@media only screen and (max-width: 1152px) {
+    body, input, select, textarea {
+		background-color: white;
+        color: rgb(248, 7, 7); /* Font color for mobile devices */
+		
+    }
+
+    a {
+        color: rgb(248, 7, 7); /* Link color for mobile devices */
+		
+    }
+}
+
 		a:hover {
 			text-decoration: none;
 			border-bottom-color: transparent;
@@ -213,6 +227,8 @@ input, select, textarea {
 			text-decoration: none;
 		}
 
+	
+
 	h1 {
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 5rem;
@@ -245,7 +261,7 @@ input, select, textarea {
 		font-size: 0.625rem;
 	}
 
-	@media screen and (max-width: 736px) {
+	@media screen and (max-width: 1000px) {
 
 		h1 {
 			font-size: 4.5rem;
@@ -255,14 +271,17 @@ input, select, textarea {
 		h2 {
 			font-size: 1.25rem;
 			line-height: 1.7;
+			color: rgb(255, 255, 255);
 		}
 
 		h3 {
 			font-size: 0.9rem;
+			color: rgb(0, 0, 0);
 		}
 
 		h4 {
 			font-size: 0.75rem;
+			color: black;
 		}
 
 		h5 {
@@ -283,10 +302,12 @@ input, select, textarea {
 
 		h3 {
 			font-size: 0.8rem;
+			color: black;
 		}
 
 		h4 {
 			font-size: 0.675rem;
+			color: black;
 		}
 
 		h5 {
@@ -2947,7 +2968,7 @@ input, select, textarea {
 				display: block;
 				height: 25vw;
 				min-height: 18rem;
-				object-fit: cover;
+				object-fit: fill;
 				object-position: center;
 				width: 100%;
 			}
